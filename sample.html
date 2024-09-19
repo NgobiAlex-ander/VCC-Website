@@ -1,0 +1,241 @@
+<script>
+    let slideIndex = 0;
+    let slides = document.getElementsByClassName("slide");
+    
+    function showSlides(n) {
+        if (n >= slides.length) {slideIndex = 0}
+        if (n < 0) {slideIndex = slides.length - 1}
+        
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        
+        slides[slideIndex].style.display = "block";  
+    }
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function showNextSlide() {
+        plusSlides(1);
+    }
+    
+    function startSlideshow() {
+        showSlides(slideIndex);
+        setInterval(showNextSlide, 10000); // Change image every 10 seconds
+    }
+    
+    startSlideshow();
+    </script>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    
+    </script>
+    
+
+
+    <!--  -->
+    <!-- Events Section -->
+
+ 
+ <section class="events-section">
+    <h1>Upcoming Events</h1>
+    <div class="event-grid">
+        <div class="event-card" onclick="showEventDetail('event1')">
+            <div class="event-image" style="background-image: url('life.jpg');"></div>
+            <div class="event-info">
+                <h2>Encounter Camp</h2>
+                <p>September 1, 2024 - 10:00 AM</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="event-card" onclick="showEventDetail('event2')">
+            <div class="event-image" style="background-image: url('fun1.jpg');"></div>
+            <div class="event-info">
+                <h2>Ministry Fun Day</h2>
+                <p>September 5, 2024 - 7:00 PM</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="event-card" onclick="showEventDetail('event3')">
+            <div class="event-image" style="background-image: url('donate.jpg');"></div>
+            <div class="event-info">
+                <h2>Christmas Curnival</h2>
+                <p>December 12, 2024</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Event Detail Modal -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div id="event1" class="event-detail">
+            <img src="slide.jpg" alt="Sunday Service" class="event-detail-image">
+            <h2>Encounter</h2>
+            <p>Date: September 1, 2024</p>
+           
+            <p>Location: Scripture Union Site</p>
+            <p>Come and experience an encounter with God place wihout any distruction but one on one with the father.</p>
+        </div>
+        <div id="event2" class="event-detail">
+            <img src="fun.jpg" alt="Youth Group" class="event-detail-image">
+            <h2>Youth Group</h2>
+            <p>Date: September 5, 2024</p>
+            <p>Time: 7:00 PM</p>
+            <p>Location: Youth Hall</p>
+            <p>Description: A dynamic and fun gathering for our youth. Enjoy games, music, and fellowship while exploring faith and building lasting friendships.</p>
+        </div>
+        <div id="event3" class="event-detail">
+            <img src="https://via.placeholder.com/600x300?text=Community+Outreach" alt="Community Outreach" class="event-detail-image">
+            <h2>Community Outreach</h2>
+            <p>Date: September 12, 2024</p>
+            <p>Time: 9:00 AM</p>
+            <p>Location: City Park</p>
+            <p>Description: Help us make a difference in our community. Join us for a day of service as we extend kindness and support to those in need.</p>
+        </div>
+    </div>
+  </div>
+  
+  <!--  -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giving Online - Victory City Church</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #006098;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            font-size: 18px;
+        }
+        .giving-content {
+            margin: 40px 0;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .giving-content h2 {
+            color: #006098;
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .giving-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .giving-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .giving-option {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .giving-option h3 {
+            color: #006098;
+            margin-bottom: 10px;
+        }
+        .giving-option p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #006098;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #004878;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #006098;
+            color: white;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        #mobileMoneyDetails {
+            display: none;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Giving Online</h1>
+        <p>Your generosity helps us continue our mission. Thank you for your support!</p>
+    </header>
+
+    <div class="container">
+        <div class="giving-content">
+            <h2>Why Give?</h2>
+            <p>At Victory City Church, your contributions are vital to the growth and outreach of our ministries. Your giving allows us to:</p>
+            <ul>
+                <li>Support mission trips and community outreach programs.</li>
+                <li>Maintain our church facilities.</li>
+                <li>Fund educational programs and resources.</li>
+                <li>Provide assistance to those in need within our community.</li>
+            </ul>
+        </div>
+
+        <div class="giving-content">
+            <h2>Ways to Give</h2>
+            <div class="giving-options">
+                <div class="giving-option">
+                    <h3>Online Giving</h3>
+                    <p>Use our secure online platform to give a one-time donation or set up recurring contributions.</p>
+                    <button class="cta-button" onclick="showMobileMoneyDetails()">Give Online</button>
+
+                    <div id="mobileMoneyDetails">
+                        <h3>Donate via Mobile Money</h3>
+                        <p>To donate via MTN Mobile Money:</p>
+                        <ul>
+                            <li>Dial *165#</li>
+                            <li>Select 'Send Money'</li>
+                            <li>Enter our number: <strong>0780XXXXXX</strong></li>
+                            <li>

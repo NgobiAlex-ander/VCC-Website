@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries - Victory City Church Rubaga</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #006098;
+            --secondary-color: #ff6f61;
+            --accent-color: #ffd700;
+            --background-color: #f0f8ff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .victory-link {
+            font-size: 1.5em;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-bar a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-bar a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Ministries Section */
+        .ministries-section {
+            padding: 80px 0;
+        }
+
+        .ministries-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .ministries-hero h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .ministries-hero p {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+        }
+
+        .ministries-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1em;
+        }
+
+        .ministries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .ministry-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .ministry-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ministry-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 80px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 10px;
+        }
+
+        .call-to-action h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .call-to-action p {
+            margin-bottom: 30px;
+        }
+
+        .btn-alt {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .btn-alt:hover {
+            background-color: white;
+        }
+
+        .footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="Home.html" class="victory-link">Victory</a>
+            <span>City Church Rubaga</span>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="ministry.html">Ministries</a>
+        </div>
+    </nav>
+  
+    <section id="ministries" class="ministries-section">
+        <div class="container">
+            <div class="ministries-hero">
+                <h1>Our Ministries</h1>
+                <p>Connecting, Serving, and Growing Together</p>
+            </div>
+    
+            <div class="ministries-intro">
+                <p>We offer a variety of ministries that provide opportunities for fellowship, service, and spiritual growth. Whether you're looking to deepen your faith, connect with others, or serve the community, there's a place for you here.</p>
+            </div>
+    
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <img src="images/band.jpg" alt="iworship Ministry">
+                    <div class="card-content">
+                        <h3>iworship Ministry</h3>
+                        <p>Engage in Bible studies, prayer groups, and fellowship with other adults.</p>
+                        <a href="#adult-ministry" class="btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="ministry-card">
+                    <img src="images/media.jpg" alt="imedia Ministry">
+                    <div class="card-content">
+                        <h3>imedia Ministry</h3>
+                        <p>Empowering the next generation through faith-based activities and community.</p>
+                        <a href="#youth-ministry" class="btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="ministry-card">
+                    <img src="images/BD.jpg" alt="icare Ministry">
+                    <div class="card-content">
+                        <h3>iCare Ministry</h3>
+                        <p>Supporting families with programs, counseling, and activities for all ages.</p>
+                        <a href="#family-ministry" class="btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="ministry-card">
+                    <img src="images/KIDS.jpg" alt="Heritage Ministry">
+                    <div class="card-content">
+                        <h3>Heritage Ministry</h3>
+                        <p>Reaching out to the community through service and compassion.</p>
+                        <a href="#outreach-ministry" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="call-to-action">
+                <h2>Get Involved</h2>
+                <p>Join one of our ministries and make a difference in our community and beyond.</p>
+                <a href="form.html" class="btn btn-alt">Join a Ministry</a>
+            </div>
+        </div>
+    </section>
+
+<!-- footer -->
+
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Us</h3>
+              <p>Albert Cook Rd, Rubaga, Uganda</p>
+              <p>Phone: (+256) 751467340</p>
+              <p>Email: info@victorycitychurch.com</p>
+          </div>
+          <div class="footer-section">
+              <h3>Quick Links</h3>
+              <p><a href="index.html">Home</a></p>
+              <p><a href="about.html">About Us</a></p>
+              <p><a href="services.html">Services</a></p>
+              <p><a href="ministry.html">Ministries</a></p>
+          </div>
+          <div class="footer-section">
+              <h3>Connect With Us</h3>
+              <p><a href="#">Facebook</a></p>
+              <p><a href="#">Twitter</a></p>
+              <p><a href="#">Instagram</a></p>
+              <p><a href="#">YouTube</a></p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Victory City Church Rubaga. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

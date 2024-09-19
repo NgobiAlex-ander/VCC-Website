@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory City Church Rubaga - Home</title>
+    <meta name="description" content="Welcome to Victory City Church Rubaga. Join us for worship, fellowship, and service as we grow together in faith.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Existing stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Existing styles -->
+    <style>
+        /* ... (keep all existing styles) ... */
+
+        /* New styles for added features */
+        .search-bar {
+            margin: 10px 0;
+            text-align: right;
+        }
+        .search-bar input {
+            padding: 5px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #006098;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .newsletter-signup {
+            background-color: #f0f4f8;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .newsletter-signup input {
+            padding: 5px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .newsletter-signup button {
+            padding: 5px 10px;
+            background-color: #006098;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .service-times {
+            background-color: #e6f3fa;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .location-map {
+            margin-top: 20px;
+        }
+        .accessibility-tools {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #006098;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+        }
+        .accessibility-tools button {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: none;
+        }
+        #cookie-consent button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #006098;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+                /* Style your mobile menu toggle button */
+            }
+            .nav-bar {
+                display: none;
+                /* Style your mobile menu */
+            }
+            .nav-bar.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="head">
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="victory-link">Victory</a>
+                <span>City Church Rubaga</span>
+            </div>
+        </header>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="links">
+            <button class="mobile-menu-toggle">Menu</button>
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="service.html" class="nav-link">Services</a>
+                <a href="ministry.html" class="nav-link">Ministries</a>
+                <a href="Give.html" class="nav-link">Give Online</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Keep existing content (slideshow, live stream, welcome message, tabs, vision statement, events section, teaching series) -->
+    <!-- ... -->
+
+    <!-- Service Times -->
+    <section class="service-times">
+        <h2>Service Times</h2>
+        <p>Sunday Worship: 10:00 AM</p>
+        <p>Wednesday Bible Study: 7:00 PM</p>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <h2>Stay Connected</h2>
+        <p>Sign up for our newsletter to receive updates and announcements.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Location Map -->
+    <section class="location-map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7547677533754!2d32.55653911475403!3d0.3076831997769285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb8080541c6d%3A0x7ccb13936e1ee8ef!2sAlbert%20Cook%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1631234567890!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Keep existing footer -->
+    <!-- ... -->
+
+    <!-- Accessibility Tools -->
+    <div class="accessibility-tools">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleHighContrast()">High Contrast</button>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent">
+        This website uses cookies to ensure you get the best experience on our website.
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <!-- Existing scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <!-- New scripts for added features -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-bar').classList.toggle('active');
+        });
+
+        // Accessibility functions
+        function increaseFontSize() {
+            document.body.style.fontSize = parseFloat(getComputedStyle(document.body).fontSize) * 1.1 + 'px';
+        }
+
+        function decreaseFontSize() {
+            document.body.style.fontSize = parseFloat(getComputedStyle(document.body).fontSize) * 0.9 + 'px';
+        }
+
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+
+        // Cookie consent
+        function showCookieConsent() {
+            document.getElementById('cookie-consent').style.display = 'block';
+        }
+
+        function acceptCookies() {
+            document.getElementById('cookie-consent').style.display = 'none';
+            // Set a cookie to remember user's choice
+            document.cookie = "cookiesAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        }
+
+        // Show cookie consent if not already accepted
+        if (document.cookie.indexOf('cookiesAccepted=true') === -1) {
+            showCookieConsent();
+        }
+    </script>
+</body>
+</html>
+Last edited 1 minute ago
+
+

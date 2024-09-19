@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Ministry</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: url("images/sunrise.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #006098;
+            padding: 10px;
+            background-color: #e6f3fa;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: auto;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #006098;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #006098;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #006098;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #004d7a;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0,96,152,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Add Church Logo -->
+        <img src="images/logo-removebg-preview.png" alt="Church Logo" class="logo">
+        <h1>Join Our Ministry</h1>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="ministry">Ministry of Interest:</label>
+            <select id="ministry" name="ministry" required>
+                <option value="">Select a ministry</option>
+                <option value="worship">Worship</option>
+                <option value="children">Children's Ministry</option>
+                <option value="youth">Youth Ministry</option>
+                <option value="outreach">Outreach</option>
+                <option value="hospitality">Hospitality</option>
+            </select>
+
+            <label for="experience">Previous Ministry Experience:</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+
+            <label for="reason">Why do you want to join this ministry?</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Victory City Church</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #006098;
+            --secondary-color: #ff6f61;
+            --accent-color: #ffd700;
+            --background-color: #f0f8ff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        
+        .header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .victory-link {
+            font-size: 1.5em;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+        /* Navigation Bar */
+        .about-nav {
+            background-color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .about-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .about-nav ul li a {
+            color: var(--primary-color);
+            font-size: 1.1em;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .about-nav ul li a:hover {
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Vision Section */
+        .vision-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .vision-section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: 'Lora', serif;
+        }
+
+        .church-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1em;
+            color: var(--text-color);
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .leader-card {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .leader-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .leader-content {
+            padding: 20px;
+        }
+
+        .leader-content h3 {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .leader-content h4 {
+            font-size: 1em;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .leader-content p {
+            font-size: 0.9em;
+            color: var(--text-color);
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="Home.html" class="victory-link">Victory</a>
+            <span>City Church Rubaga</span>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav class="about-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="ministry.html">Ministries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <h2>Our Vision and Leadership</h2>
+            
+            <p class="church-intro">
+                Victory City Church is committed to building a community of believers deeply rooted in God's word, passionate about worship, and actively engaged in transforming our city through love and service. We strive to reflect God's kingdom in all its diversity and power, providing a nurturing environment for spiritual growth and empowerment.
+            </p>
+
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <img src="images/pastor.jpg" alt="Pastor Moses Nsubuga" class="leader-image">
+                    <div class="leader-content">
+                        <h3>Pastor Moses Nsubuga</h3>
+                        <h4>Senior Pastor</h4>
+                        <p>"Our vision is to build a community of believers who are deeply rooted in God's word, passionate about worship, and actively engaged in transforming our city through love and service."</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="images/treasure pastor.jpg" alt="Pastor Treasure Lwantale" class="leader-image">
+                    <div class="leader-content">
+                        <h3>Pastor Treasure Lwantale</h3>
+                        <h4>Assistant Pastor</h4>
+                        <p>"I envision Victory City Church as a place of healing and growth, where every member is equipped to use their God-given gifts and make a lasting impact in their spheres of influence."</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="images/mr ka.jpeg" alt="Elder Kahigwa" class="leader-image">
+                    <div class="leader-content">
+                        <h3>Elder Kahigwa</h3>
+                        <h4>Church Elder</h4>
+                        <p>"Our vision is to foster a culture of discipleship, where mature believers mentor the younger generation, creating a continuous cycle of spiritual growth and leadership development."</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="images/elijah.jpg" alt="Elder Nyanzi Philip" class="leader-image">
+                    <div class="leader-content">
+                        <h3>Elder Nyanzi Philip</h3>
+                        <h4>Church Elder</h4>
+                        <p>"We aim to expand our outreach programs, addressing both spiritual and practical needs of those around us, demonstrating God's love in tangible ways."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Along Albert Cook Rd , Rubaga, Uganda</p>
+                    <p>Phone: (+256) 751467340</p>
+                    <p>Email: info@victorycitychurch.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="ministry.html">Ministries</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">YouTube</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Victory City Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
